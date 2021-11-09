@@ -1,0 +1,39 @@
+{
+  "emergency_contacts": [
+    {
+      "phone_number": "+918287688056",
+      "longitude": "77.3704362",
+      "updated_at": "2019-09-25T10:27:05.713532Z",
+      "altitude": null,
+      "id": 13041,
+      "name": "Mayank",
+      "relationship": "Brother",
+      "status": "Accepted",
+      "user": 12,
+      "profile_image": null,
+      "email": "mayank.bhambri@subcodevs.com",
+      "contact_type": "Emergency",
+      "created_at": "2019-09-24T11:41:04.646748Z",
+      "latitude": "28.6185284",
+      "uuid": "c83e0fd5-e78c-414c-be4d-1c4e095e7c11"
+    },
+    {
+      "phone_number": "+918287688056",
+      "longitude": "77.3406312",
+      "updated_at": "2019-09-25T10:27:05.713532Z",
+      "altitude": null,
+      "id": 13041,
+      "name": "Mayank",
+      "relationship": "Brother",
+      "status": "Accepted",
+      "user": 12,
+      "profile_image": null,
+      "email": "mayank.bhambri@subcodevs.com",
+      "contact_type": "Emergency",
+      "created_at": "2019-09-24T11:41:04.646748Z",
+      "latitude": "28.6260674",
+      "uuid": "c83e0fd5-e78c-414c-be4d-1c4e095e7c11"
+    }
+  ],
+  "organization_contacts": []
+}

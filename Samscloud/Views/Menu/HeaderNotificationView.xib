@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderNotificationView" customModule="Samscloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWw-cK-smW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="703-nw-lOz"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Rzw-by-MXe"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-TX-Cpw">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dVp-Yc-ocp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Xfc-vg-gay"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPq-yb-FnN">
+                    <rect key="frame" x="20" y="27" width="335" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Oe8-kH-7w4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="13"/>
+                    <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Z1J-TX-Cpw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Hg-Pe-r2E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Z1J-TX-Cpw" secondAttribute="bottom" id="5kj-BY-bNv"/>
+                <constraint firstItem="TPq-yb-FnN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Frf-xu-Dyg"/>
+                <constraint firstItem="Z1J-TX-Cpw" firstAttribute="top" secondItem="TPq-yb-FnN" secondAttribute="bottom" constant="6" id="UML-qd-143"/>
+                <constraint firstAttribute="trailing" secondItem="Z1J-TX-Cpw" secondAttribute="trailing" id="cdM-ZX-PLZ"/>
+                <constraint firstItem="DWw-cK-smW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="drc-5o-6yv"/>
+                <constraint firstItem="DWw-cK-smW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h8H-MF-7Iv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TPq-yb-FnN" secondAttribute="trailing" constant="20" id="obh-8h-min"/>
+                <constraint firstItem="DWw-cK-smW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vCx-bL-22p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="headerLabel" destination="TPq-yb-FnN" id="yP5-Z0-lTc"/>
+                <outlet property="topView" destination="DWw-cK-smW" id="9Hd-9K-hOw"/>
+            </connections>
+        </view>
+    </objects>
+</document>

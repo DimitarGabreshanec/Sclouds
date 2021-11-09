@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScanResultCollectionViewCell" id="gTV-IL-0wX" customClass="ScanResultCollectionViewCell" customModule="Samscloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="Tcf-XN-cHi">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="280"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-bs-Gcs">
+                        <rect key="frame" x="0.0" y="208" width="227" height="72"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="0Us-Mb-ovA">
+                                <rect key="frame" x="20" y="14" width="67" height="44.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="90%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYv-GH-O4S">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="27"/>
+                                        <color key="textColor" red="0.26666666666666666" green="0.30980392156862746" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="ACCURACY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pj-fE-G1s">
+                                        <rect key="frame" x="0.0" y="31.5" width="67" height="13"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="10"/>
+                                        <color key="textColor" red="0.26666666666666666" green="0.30980392156862746" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oak-yr-mPx">
+                                <rect key="frame" x="113" y="24" width="94" height="24.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anna Coleman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kV-oL-v0V">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="14"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="11"/>
+                                        <color key="textColor" red="0.2666666667" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior, Cline Hight School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSh-lc-ccN">
+                                        <rect key="frame" x="0.0" y="14" width="94" height="10.5"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="8"/>
+                                        <color key="textColor" red="0.2666666667" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oak-yr-mPx" firstAttribute="centerY" secondItem="0Us-Mb-ovA" secondAttribute="centerY" id="51M-DJ-9zk"/>
+                            <constraint firstAttribute="height" constant="72" id="GeB-Wf-OfA"/>
+                            <constraint firstItem="0Us-Mb-ovA" firstAttribute="leading" secondItem="OTf-bs-Gcs" secondAttribute="leading" constant="20" id="JnI-10-bQ6"/>
+                            <constraint firstItem="oak-yr-mPx" firstAttribute="leading" secondItem="0Us-Mb-ovA" secondAttribute="trailing" constant="26" id="Yl7-Mb-Aq5"/>
+                            <constraint firstItem="0Us-Mb-ovA" firstAttribute="centerY" secondItem="OTf-bs-Gcs" secondAttribute="centerY" id="fSW-Va-Did"/>
+                            <constraint firstAttribute="trailing" secondItem="oak-yr-mPx" secondAttribute="trailing" constant="20" id="q7D-FO-oKt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Tcf-XN-cHi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6CL-Dj-cCt"/>
+                <constraint firstItem="OTf-bs-Gcs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D8X-fP-PdH"/>
+                <constraint firstItem="Tcf-XN-cHi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UJV-Rr-NPT"/>
+                <constraint firstAttribute="bottom" secondItem="Tcf-XN-cHi" secondAttribute="bottom" id="Xjo-01-9c3"/>
+                <constraint firstAttribute="trailing" secondItem="OTf-bs-Gcs" secondAttribute="trailing" id="aNH-oP-YN4"/>
+                <constraint firstAttribute="bottom" secondItem="OTf-bs-Gcs" secondAttribute="bottom" id="cKB-Ca-rrU"/>
+                <constraint firstAttribute="trailing" secondItem="Tcf-XN-cHi" secondAttribute="trailing" id="gmI-y6-Ib3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="accuracyLbel" destination="7Pj-fE-G1s" id="qZR-HX-WNu"/>
+                <outlet property="addressLabel" destination="KSh-lc-ccN" id="6md-ot-xAC"/>
+                <outlet property="bottomContainerView" destination="OTf-bs-Gcs" id="dfz-40-Fag"/>
+                <outlet property="percentLabel" destination="vYv-GH-O4S" id="o34-4B-j2e"/>
+                <outlet property="scanResultImageView" destination="Tcf-XN-cHi" id="aSY-eR-5YZ"/>
+                <outlet property="userNameLabel" destination="6kV-oL-v0V" id="Zd5-MI-5TH"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeImage" width="375" height="422"/>
+    </resources>
+</document>

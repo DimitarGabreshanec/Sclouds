@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LiveFeedCollectionViewCell" id="gTV-IL-0wX" customClass="LiveFeedCollectionViewCell" customModule="Samscloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="259"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="259"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJj-xA-rfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="223" height="253"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="TO5-Dr-JmY">
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="253"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTo-kb-XXF">
+                                <rect key="frame" x="0.0" y="186" width="223" height="67"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oval" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-sh-Yva">
+                                        <rect key="frame" x="4" y="8" width="51" height="51"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Rxy-sh-Yva" secondAttribute="height" multiplier="1:1" id="tWi-fj-N7B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fna-C1-bGI">
+                                        <rect key="frame" x="66" y="23" width="146" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grace Jones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdj-Tx-GY8">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="10.5"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="8"/>
+                                                <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVa-NX-cOo">
+                                                <rect key="frame" x="0.0" y="10.5" width="146" height="10.5"/>
+                                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="8"/>
+                                                <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fna-C1-bGI" firstAttribute="centerY" secondItem="HTo-kb-XXF" secondAttribute="centerY" id="Arn-ex-Azf"/>
+                                    <constraint firstAttribute="width" secondItem="HTo-kb-XXF" secondAttribute="height" multiplier="10:3" id="OeH-3T-Z6w"/>
+                                    <constraint firstAttribute="trailing" secondItem="fna-C1-bGI" secondAttribute="trailing" constant="11" id="Otg-9a-7cu"/>
+                                    <constraint firstItem="Rxy-sh-Yva" firstAttribute="top" secondItem="HTo-kb-XXF" secondAttribute="top" constant="8" id="ciL-3v-ezL"/>
+                                    <constraint firstItem="fna-C1-bGI" firstAttribute="leading" secondItem="Rxy-sh-Yva" secondAttribute="trailing" constant="11" id="pzE-2F-R76"/>
+                                    <constraint firstItem="Rxy-sh-Yva" firstAttribute="leading" secondItem="HTo-kb-XXF" secondAttribute="leading" constant="4" id="vj9-DR-a1x"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rxy-sh-Yva" secondAttribute="bottom" constant="8" id="xHF-0U-ZLg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TO5-Dr-JmY" firstAttribute="leading" secondItem="HJj-xA-rfZ" secondAttribute="leading" id="0Zq-Rv-fN0"/>
+                            <constraint firstItem="TO5-Dr-JmY" firstAttribute="top" secondItem="HJj-xA-rfZ" secondAttribute="top" id="4LP-Z1-a3c"/>
+                            <constraint firstAttribute="trailing" secondItem="HTo-kb-XXF" secondAttribute="trailing" id="Mfh-uN-hcq"/>
+                            <constraint firstAttribute="bottom" secondItem="HTo-kb-XXF" secondAttribute="bottom" id="Sag-Bk-sZs"/>
+                            <constraint firstItem="HTo-kb-XXF" firstAttribute="leading" secondItem="HJj-xA-rfZ" secondAttribute="leading" id="U0M-Pw-IlB"/>
+                            <constraint firstAttribute="trailing" secondItem="TO5-Dr-JmY" secondAttribute="trailing" id="Ui1-bw-fyI"/>
+                            <constraint firstAttribute="bottom" secondItem="TO5-Dr-JmY" secondAttribute="bottom" id="t78-I8-L2G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HJj-xA-rfZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BMf-Hv-X2h"/>
+                <constraint firstAttribute="bottom" secondItem="HJj-xA-rfZ" secondAttribute="bottom" constant="6" id="DDz-T6-kag"/>
+                <constraint firstAttribute="trailing" secondItem="HJj-xA-rfZ" secondAttribute="trailing" id="E8i-oi-hoB"/>
+                <constraint firstItem="HJj-xA-rfZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uxi-Ly-q0D"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="223" height="259"/>
+            <connections>
+                <outlet property="bottomContainerViewConstraint" destination="DDz-T6-kag" id="f8C-ab-sYF"/>
+                <outlet property="containerView" destination="HJj-xA-rfZ" id="9ig-mh-R9g"/>
+                <outlet property="deviceLabel" destination="sVa-NX-cOo" id="60Y-e0-d03"/>
+                <outlet property="liveFeedImageView" destination="TO5-Dr-JmY" id="xUn-Os-Gnd"/>
+                <outlet property="userImageView" destination="Rxy-sh-Yva" id="Wae-VQ-5RR"/>
+                <outlet property="userNameLabel" destination="rdj-Tx-GY8" id="cg6-cz-Vvb"/>
+            </connections>
+            <point key="canvasLocation" x="114.40000000000001" y="144.3778110944528"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeImage" width="375" height="422"/>
+        <image name="oval" width="76" height="76"/>
+    </resources>
+</document>

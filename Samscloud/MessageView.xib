@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvalidOTP" customModule="Samscloud" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageView" customModule="Samscloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j09-Tb-8wc">
+                    <rect key="frame" x="117.5" y="24" width="65.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="16"/>
+                    <color key="textColor" red="0.0039215686274509803" green="0.33725490196078434" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your verification code is invalid. Please enter a valid code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIL-UW-9iB">
+                    <rect key="frame" x="8" y="60.5" width="284" height="35.5"/>
+                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-XT-AhY">
+                    <rect key="frame" x="110" y="136" width="80" height="42"/>
+                    <color key="backgroundColor" red="0.0039215686274509803" green="0.33725490196078434" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="0FH-94-5nb"/>
+                        <constraint firstAttribute="width" constant="80" id="3Ol-R9-kHd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="12"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickOnTryAgain:" destination="iN0-l3-epB" eventType="touchUpInside" id="HvW-0I-sB3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ft-pB-3J6">
+                    <rect key="frame" x="266" y="4" width="30" height="34"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zbS-XT-AhY" secondAttribute="bottom" constant="16" id="7tC-rl-wLg"/>
+                <constraint firstItem="oIL-UW-9iB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="CdI-mI-cNm"/>
+                <constraint firstItem="zbS-XT-AhY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JcV-28-onQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oIL-UW-9iB" secondAttribute="trailing" constant="8" id="N9z-Zy-fMH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5ft-pB-3J6" secondAttribute="trailing" constant="4" id="P4z-Tg-1cY"/>
+                <constraint firstItem="j09-Tb-8wc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="aLr-dN-hb1"/>
+                <constraint firstItem="oIL-UW-9iB" firstAttribute="top" secondItem="j09-Tb-8wc" secondAttribute="bottom" constant="16" id="h4f-mw-da7"/>
+                <constraint firstItem="j09-Tb-8wc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hu0-Rl-09A"/>
+                <constraint firstItem="5ft-pB-3J6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="xWd-dD-rzX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5ft-pB-3J6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="descLabel" destination="oIL-UW-9iB" id="bvp-j1-6u7"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="97"/>
+        </view>
+    </objects>
+</document>
